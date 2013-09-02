@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="searchButtonText">Search</string>
+    
+    <string name="menuMain">Main Menu</string>
+    <string name="menuSearch">Search All</string>
+    <string name="menuShare">Share</string>
+    <string name="menuPreferences">Preferences</string>
+    <string name="menuSuggest">Suggest</string>
+    <string name="menuReport">Report Error</string>
+    <string name="menuFavorite">Favorite</string>
+    <string name="menuTest">Test</string>
+    <string name="menuAbout">About</string>
+    <string name="menuSearchCurrent">Search Current</string>
+    <string name="menuSearchAll">Search All</string>
+    
+    
+    <string name="app_name">Shanghai</string>
+    <string name="splashSubTitle">[ Demo on WW Framework ]</string>
+
+    <string name="xlsabout"></string>
+    <string name="xlsclick">[ enter ]</string>
+    <string name="xlscontact">fsyin505@yahoo.com</string>
+    
+    <string name="next_symbol">></string>
+    
+    <string name="childName">Placeholder Name</string>  
+    <string name="childDescription">Placeholder Description</string>
+    <string name="childPhone">Placeholder Phone</string>
+    <string name="childAddress">Placeholder Address</string>
+    <string name="childWebsite">Placeholder Website</string>
+    <string name="childMap">Placeholder Map</string>
+    
+    <string name="dldesc">NA</string>
+     
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this file serves as a readme -->
+
+<versioninfo>
+
+<!-- Version 1.0.1
+	- Fixed app crash on HashMap Geomap memory reallocation by system, when resuming from background
+	- Revised logic to prevent catalog download if server file was older than a fresh app install, manual download allowed
+	- Current catalog timestamp will default to app install date, so new installs will never be notified of a existing 
+	  server catalog update
+-->
+
+<!--  Version 1.0.2, Released 9/13
+	- Created Version file (this)
+	- Added 'finally' on try block to allow splash screen to time out.  But root cause is actually because shared preference 
+	  for setSPCatalogDownloadingStatus is not being set in DownloadCatalog.java
+	- DLPref.setSPCatalogDownloadingStatus set to false in splash display to reset prior version bug  
+-->
+
+<!-- Version 1.0.3 (version code 4)
+	- Fixed bug DLPref.getSPCatalogImageDownloadOnce(mContext) by removing negating condition 
+	  Otherwise, preferences menu would never show updated timestamp, and user could repeatedly manual update (9/13)
+	- Added DLPref.setSPCatalogDownloadingStatus(mContext, false); to failed download case in DownloadCatalog.java
+	  Otherwise, prevented splash screen from launching (9/16)
+	- Enabled textSize option in ChildTextLayout.java, using 'options="font:12"' in xml file (9/19)
+	- Changed copy values for CopyOnLongClickListener in ChildTextLayout to return value only, no name (9/27)
+	- Changed initialization of lastUpdate time stamp for new install, so only the recent catalogs will not be downloaded, 
+	  but future catalogs would be (10/8)
+-->
+
+<!-- Version 1.0.4/1.0.5 (version code 5/6) 
+	- Fixed bug in Splash View, where fresh install would pop up notification of available update, but download was not possible.
+	  Caused by setting the catalog last download time to 'now'.  Instead set the download time to 'lastUpdate' timestamp 
+	  introduced in previous release, since comparison is made to CatalogLastMod and not CatalogDownloadTimestamp.  
+    - Removed SPCatalogLastMod and default all calls to SPCatalogDownloadTimestamp.  Effectively the same, but reduction 
+      prevents maintenance confusion
+    - Added Option feature for long press ChildTextLayout
+    - Added Taxi Card feature as an option
+    - Fixed Native Google Map launch to handle "&" with StringFx urlEncode
+    - Added Native Google Map launch option to List Preferences
+-->
+
+<!-- Version 1.0.6 (version code 7) 
+	- Fixed bug hard coding lengthOfFile download that shows error in notification
+-->
+
+<!-- Version 1.0.7 (version code 8) 
+	- Removed Toasting map display count in AsyncOverlay
+	- Created loopCount limitation to reduce map performance impact of too many items, limit to most recent 400 items
+	- Moved Splash Screen click listener to seperate function, called when thread detects download timeout
+	- Enabled support for Attribute of Interest highlighting, changed AsyncOverlay, WWOverlayItem, WWItemizedOverlay, DisplayChild
+	- Removed shadow draw in WWItemizedOverlay for improved mapView response time 
+	- Removed Toast call in DownloadCatalog's doInBackground, causing app crash when connection broken while catalog downloading
+-->
+
+<!-- Version 1.1.0 (version code 9) 2013/08/31 
+	- Integrated to mapsV2 API
+	- removed Calendar feature
+	- updated font to Ubuntu
+	- stylistic updates to Child display
+	- updated catalog
+-->
+
+</versioninfo>

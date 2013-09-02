@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="Directory Data"
+        android:title="Directory Data" >
+        <CheckBoxPreference
+            android:key="autoDownloadCheckBox"
+            android:summary="Check to auto download new updates on app launch"
+            android:title="Auto Update" />
+
+        <ListPreference
+            android:defaultValue="download_wifiOnly"
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="connectionType"
+            android:summary="For downloading directory updates"
+            android:title="Connection Type" />
+
+        <Preference
+            android:key="updateNow"
+            android:summary="Click here to manually update now"
+            android:title="Update Now" >
+        </Preference>
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:summary="Font Settings"
+        android:title="Font Settings" >
+        <ListPreference
+            android:defaultValue="1.0"
+            android:entries="@array/fontOptions"
+            android:entryValues="@array/fontValues"
+            android:key="fontpref"
+            android:summary="Change text sizes"
+            android:title="Text Size" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Map Settings"
+        android:title="Map Settings" >
+        <CheckBoxPreference
+            android:key="nativeMapOption"
+            android:summary="Check to launch individual addresses using native Google Map"
+            android:title="Use Google Map" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

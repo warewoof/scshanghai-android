@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <style name="FrameNameText">
+        <!--  <item name="android:background">@drawable/frame_header_gradient_background</item>  -->
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:paddingLeft">6dp</item>
+		<item name="android:paddingRight">3dp</item>
+		<item name="android:paddingTop">3dp</item>		
+		<item name="android:paddingBottom">6dp</item>
+		<item name="android:textSize">25sp</item>
+		<item name="android:textColor">#f6f6f6</item>	
+		<item name="android:shadowRadius">2</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowColor">#8fffffff</item>
+    </style>
+    
+    <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+</resources>

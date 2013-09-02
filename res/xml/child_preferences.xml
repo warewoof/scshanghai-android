@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="UI Settings"
+        android:title="Settings" >
+        <ListPreference
+            android:defaultValue="1.0"
+            android:entries="@array/fontOptions"
+            android:entryValues="@array/fontValues"
+            android:key="fontpref"
+            android:summary="Change text sizes"
+            android:title="Text Size" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Address Links"
+        android:title="Address Links" >
+        <CheckBoxPreference
+            android:key="nativeMapOption"
+            android:summary="Check to launch individual addresses using native Google Map"
+            android:title="Use Google Map" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

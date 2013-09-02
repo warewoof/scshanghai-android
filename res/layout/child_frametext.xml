@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_header_gradient_background" >
+
+        <ImageView
+            android:id="@+id/barSpacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:minWidth="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/barTextHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/barSpacer" >
+
+            <TextView
+                android:id="@+id/barText"
+                style="@style/FrameNameText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/list_selector_background" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/barShareIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_share"
+            android:background="@android:drawable/list_selector_background" />
+
+        <ImageView
+            android:id="@+id/barShareDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/barShareIcon"
+            android:src="@drawable/frame_bar_divider" />
+
+        <ImageView
+            android:id="@+id/barMapIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/barShareDiv"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_mapmode"
+            android:background="@android:drawable/list_selector_background" />
+
+        <ImageView
+            android:id="@+id/barMapDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/barMapIcon"
+            android:src="@drawable/frame_bar_divider" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/barDividerImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_divider" />
+    </LinearLayout>
+
+</LinearLayout>

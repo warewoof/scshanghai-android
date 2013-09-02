@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/llList"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		 >
+		<RelativeLayout 
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/custom_list_name_frame"
+			android:background="@drawable/frame_header_gradient_background" >
+			<TextView
+			    android:id="@+id/custom_list_name_frame_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				style="@style/FrameNameText"
+				android:background="@android:drawable/list_selector_background"	
+				android:layout_marginRight="96dp" />
+			
+			
+			<ImageView
+		        android:id="@+id/listNameSearchIcon"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"	    	
+		    	android:paddingRight="5dp"
+		    	android:paddingLeft="5dp"
+		   		android:src="@drawable/ic_menu_search"
+		   		android:background="@android:drawable/list_selector_background"   		 
+		   		android:layout_alignParentRight="true"
+		   		android:clickable="true"	
+		   		android:onClick="searchIconClick" />
+			<ImageView
+			    android:id="@+id/ic_sep_search"
+			    android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"
+		    	android:minWidth="1dp"
+		    	android:src="@drawable/frame_bar_divider"		    	
+		    	android:layout_toLeftOf="@id/listNameSearchIcon" />
+			<ImageView
+		        android:id="@+id/listNameMapIcon"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"
+		    	android:paddingRight="5dp"
+		    	android:paddingLeft="5dp"
+		   		android:src="@drawable/ic_menu_mapmode"
+		   		android:background="@android:drawable/list_selector_background"
+		   		android:layout_toLeftOf="@id/ic_sep_search"
+		   		android:clickable="true"	
+		   		android:onClick="mapIconClick" />
+			<ImageView
+			    android:id="@+id/ic_sep_map"
+			    android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"
+		    	android:minWidth="1dp"
+		    	android:src="@drawable/frame_bar_divider"		    	
+		    	android:layout_toLeftOf="@id/listNameMapIcon" />
+		</RelativeLayout>
+    <ImageView
+        android:id="@+id/custom_list_name_divider"
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+   		android:src="@drawable/frame_divider"   		
+   		android:layout_below="@id/custom_list_name_frame" />
+	
+	
+	<ListView
+		android:id="@+id/custom_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:cacheColorHint="#00000000"
+		android:dividerHeight="0.5dp" 
+		android:divider="#b8b8b8"
+		android:layout_gravity="bottom"
+		xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:layout_below="@id/custom_list_name_divider"
+		android:background="@drawable/list_gradient_background" />
+	
+	</RelativeLayout>
+</FrameLayout>

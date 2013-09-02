@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <!--
+    <TextView
+        android:id="@+id/splashLogoText"
+        android:text="@string/logotext"
+        
+        android:textStyle="bold"
+        android:textSize="120sp"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:textColor="#FF0000"
+    	android:layout_marginTop="-50dp"
+    	
+    	/>
+    <TextView
+        android:id="@+id/splashSubTitle"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:text="@string/splashSubTitle" 
+        android:textColor="#aaaaaa"
+		android:layout_centerHorizontal="true" 
+    	android:layout_below="@id/splashLogoText"
+		android:textSize="14sp"
+		android:typeface="monospace"
+        />
+        -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="#00000000"
+            android:src="@drawable/splash" />
+
+        <!-- <TextView
+            android:id="@+id/splashContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/splashSubTitle"
+            android:textColor="#FFFFFF" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

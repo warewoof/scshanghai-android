@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llItem"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rlItem"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"   
+            android:width="5dp"
+            android:textSize="30sp"
+			android:layout_alignParentLeft="true"
+            android:id="@+id/spacer"  />
+        
+        <!-- <ImageView
+            android:src="@drawable/calendar48"
+            android:id="@+id/listimage"
+            android:layout_toRightOf="@id/spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                        
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp" /> 
+		<ImageView
+            android:src="@drawable/ic_calendar"
+            android:id="@+id/listimage"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                        
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp" />-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:id="@+id/name" 
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/spacer"
+			android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="48dp"  
+            android:ellipsize="marquee"
+            android:maxLines="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/next_symbol"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/next_arrow" />
+        
+        
+        
+    </RelativeLayout>
+</LinearLayout>

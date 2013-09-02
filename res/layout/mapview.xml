@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_gravity="bottom"
+	android:id="@+id/rl" >
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<RelativeLayout 
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/custom_list_name_frame"
+			android:background="@drawable/frame_header_gradient_background" >
+			<TextView
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"   
+	            android:width="5dp"
+				android:layout_alignParentLeft="true"
+	            android:id="@+id/spacer"  />
+			<TextView
+			    android:id="@+id/custom_list_name_frame_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/FrameNameText"	
+		   		android:background="@android:drawable/list_selector_background"		
+				android:layout_toRightOf="@id/spacer"	 />
+			<ImageView
+		        android:id="@+id/map_share_icon"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"		    	
+		    	android:paddingRight="5dp"
+		    	android:paddingLeft="5dp"
+		   		android:src="@drawable/ic_menu_share"	
+		   		android:background="@android:drawable/list_selector_background"  
+		   		android:layout_alignParentRight="true"
+		   		android:clickable="true"	
+		   		android:onClick="shareIconClick" />
+			<ImageView
+			    android:id="@+id/map_share_div"
+			    android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"
+		    	android:minWidth="1dp"
+		    	android:src="@drawable/frame_bar_divider"		    	
+		    	android:layout_toLeftOf="@id/map_share_icon" />
+			
+		</RelativeLayout>
+		<ImageView
+		        android:id="@+id/custom_list_name_divider"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="1dp"
+		   		android:src="@drawable/frame_divider"   		
+		   		android:layout_below="@id/custom_list_name_frame" />
+		
+		<RelativeLayout 
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/map_frame"
+			android:layout_below="@id/custom_list_name_divider" >
+			<com.google.android.maps.MapView
+			    xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:id="@+id/mapview"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:clickable="true"			    
+			    android:apiKey="0N9uYG8nZpGhfGs9z6lur1yvufYaYIHqdXoqJdQ" />	
+		</RelativeLayout>
+		
+	</RelativeLayout>
+	
+</FrameLayout> 
